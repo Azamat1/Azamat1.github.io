@@ -17,3 +17,32 @@
 .d-none {
     display: none;
 }
+
+.d-flex {
+    display: flex;
+}
+
+.d-flex-j-center {
+    justify-content: center;
+}
+
+.player {
+    height: 120px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.player:hover {
+    opacity: 1;
+    transition: 1s;
+}
+
+.selected-player {
+    font-size: 3rem;
+    font-width: bold;
+    margin: 0 3rem;
+}
+
+.selector {
+    font-size: 2rem;
+}
