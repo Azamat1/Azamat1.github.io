@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MK Chuhichi</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/player.js"></script>
     <script src="js/main.js"></script>
 	<link rel="stylesheet" href="css/style.css" media="screen" />
 </head>
 <body>
-    <div class="d-none">
-        <img id="kolyan" src="media/heads/kolyan.jpg" />
-        <img id="azamat" src="media/heads/azamat2.png" />
+    <h1 class="text-center">ЧУХАНЫ ФАЙТ НАЙТ</h1>
+    <div id="players">
+        <h2>ВЫБЕРИ ЧУХАНА:</h2>
+        <img id="mozgovoi" src="media/heads/mozgovoi.jpg" class="player" />
+        <img id="haramarazmat" src="media/heads/haramarazmat.png" class="player" />
     </div>
-    <h1 class="text-center">ЧУХАНЫ ФАЙТ НАЙТ</h1>    
+    <div id="title" class="d-flex d-flex-j-center">
+        <div id="player1" class="selected-player">?</div>
+        <div id="selector" class="selector">vs</div>
+        <div id="player2" class="selected-player">?</div>
+    </div>
+
     <canvas id="canvas"></canvas>    
 </body>
 </html>
