@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
     mode: 'development',
-	entry: './src/js/main.js',
+	entry: './src/js/index.jsx',
 	output: {
 		filename: 'main.js',
         path: path.resolve(__dirname, '/dist'),
@@ -22,6 +22,19 @@ module.exports = {
             {
                 test: /\.(png|svg|jpg|gif)$/,
                 use: ["file-loader"]
+            },
+            {
+                test: /\.jsx$/,
+                exclude: /node_modules/,
+                loader: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: [
+                            '@babel/preset-env',
+                            '@babel/preset-react'
+                        ]
+                    }
+                }
             },
         ],
     },
